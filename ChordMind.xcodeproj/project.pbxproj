@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61C6DE4D1D1DE88400F361BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6DE4C1D1DE88400F361BF /* AppDelegate.swift */; };
+		61C6DE4F1D1DE88400F361BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C6DE4E1D1DE88400F361BF /* Assets.xcassets */; };
+		61C6DE521D1DE88400F361BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C6DE501D1DE88400F361BF /* MainMenu.xib */; };
+		61C6DE5D1D1DE88400F361BF /* ChordMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6DE5C1D1DE88400F361BF /* ChordMindTests.swift */; };
+		61C6DE681D1DE88400F361BF /* ChordMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6DE671D1DE88400F361BF /* ChordMindUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61C6DE591D1DE88400F361BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C6DE411D1DE88400F361BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C6DE481D1DE88400F361BF;
+			remoteInfo = ChordMind;
+		};
+		61C6DE641D1DE88400F361BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C6DE411D1DE88400F361BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C6DE481D1DE88400F361BF;
+			remoteInfo = ChordMind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61C6DE491D1DE88400F361BF /* ChordMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChordMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C6DE4C1D1DE88400F361BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61C6DE4E1D1DE88400F361BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61C6DE511D1DE88400F361BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		61C6DE531D1DE88400F361BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C6DE581D1DE88400F361BF /* ChordMindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordMindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C6DE5C1D1DE88400F361BF /* ChordMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordMindTests.swift; sourceTree = "<group>"; };
+		61C6DE5E1D1DE88400F361BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C6DE631D1DE88400F361BF /* ChordMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C6DE671D1DE88400F361BF /* ChordMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordMindUITests.swift; sourceTree = "<group>"; };
+		61C6DE691D1DE88400F361BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61C6DE461D1DE88400F361BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C6DE551D1DE88400F361BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C6DE601D1DE88400F361BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61C6DE401D1DE88400F361BF = {
+			isa = PBXGroup;
+			children = (
+				61C6DE4B1D1DE88400F361BF /* ChordMind */,
+				61C6DE5B1D1DE88400F361BF /* ChordMindTests */,
+				61C6DE661D1DE88400F361BF /* ChordMindUITests */,
+				61C6DE4A1D1DE88400F361BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61C6DE4A1D1DE88400F361BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61C6DE491D1DE88400F361BF /* ChordMind.app */,
+				61C6DE581D1DE88400F361BF /* ChordMindTests.xctest */,
+				61C6DE631D1DE88400F361BF /* ChordMindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61C6DE4B1D1DE88400F361BF /* ChordMind */ = {
+			isa = PBXGroup;
+			children = (
+				61C6DE4C1D1DE88400F361BF /* AppDelegate.swift */,
+				61C6DE4E1D1DE88400F361BF /* Assets.xcassets */,
+				61C6DE501D1DE88400F361BF /* MainMenu.xib */,
+				61C6DE531D1DE88400F361BF /* Info.plist */,
+			);
+			path = ChordMind;
+			sourceTree = "<group>";
+		};
+		61C6DE5B1D1DE88400F361BF /* ChordMindTests */ = {
+			isa = PBXGroup;
+			children = (
+				61C6DE5C1D1DE88400F361BF /* ChordMindTests.swift */,
+				61C6DE5E1D1DE88400F361BF /* Info.plist */,
+			);
+			path = ChordMindTests;
+			sourceTree = "<group>";
+		};
+		61C6DE661D1DE88400F361BF /* ChordMindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61C6DE671D1DE88400F361BF /* ChordMindUITests.swift */,
+				61C6DE691D1DE88400F361BF /* Info.plist */,
+			);
+			path = ChordMindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61C6DE481D1DE88400F361BF /* ChordMind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C6DE6C1D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMind" */;
+			buildPhases = (
+				61C6DE451D1DE88400F361BF /* Sources */,
+				61C6DE461D1DE88400F361BF /* Frameworks */,
+				61C6DE471D1DE88400F361BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChordMind;
+			productName = ChordMind;
+			productReference = 61C6DE491D1DE88400F361BF /* ChordMind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61C6DE571D1DE88400F361BF /* ChordMindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C6DE6F1D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMindTests" */;
+			buildPhases = (
+				61C6DE541D1DE88400F361BF /* Sources */,
+				61C6DE551D1DE88400F361BF /* Frameworks */,
+				61C6DE561D1DE88400F361BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C6DE5A1D1DE88400F361BF /* PBXTargetDependency */,
+			);
+			name = ChordMindTests;
+			productName = ChordMindTests;
+			productReference = 61C6DE581D1DE88400F361BF /* ChordMindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61C6DE621D1DE88400F361BF /* ChordMindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C6DE721D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMindUITests" */;
+			buildPhases = (
+				61C6DE5F1D1DE88400F361BF /* Sources */,
+				61C6DE601D1DE88400F361BF /* Frameworks */,
+				61C6DE611D1DE88400F361BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C6DE651D1DE88400F361BF /* PBXTargetDependency */,
+			);
+			name = ChordMindUITests;
+			productName = ChordMindUITests;
+			productReference = 61C6DE631D1DE88400F361BF /* ChordMindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61C6DE411D1DE88400F361BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "David Brown";
+				TargetAttributes = {
+					61C6DE481D1DE88400F361BF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					61C6DE571D1DE88400F361BF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 61C6DE481D1DE88400F361BF;
+					};
+					61C6DE621D1DE88400F361BF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 61C6DE481D1DE88400F361BF;
+					};
+				};
+			};
+			buildConfigurationList = 61C6DE441D1DE88400F361BF /* Build configuration list for PBXProject "ChordMind" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61C6DE401D1DE88400F361BF;
+			productRefGroup = 61C6DE4A1D1DE88400F361BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61C6DE481D1DE88400F361BF /* ChordMind */,
+				61C6DE571D1DE88400F361BF /* ChordMindTests */,
+				61C6DE621D1DE88400F361BF /* ChordMindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61C6DE471D1DE88400F361BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C6DE4F1D1DE88400F361BF /* Assets.xcassets in Resources */,
+				61C6DE521D1DE88400F361BF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C6DE561D1DE88400F361BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C6DE611D1DE88400F361BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61C6DE451D1DE88400F361BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C6DE4D1D1DE88400F361BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C6DE541D1DE88400F361BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C6DE5D1D1DE88400F361BF /* ChordMindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C6DE5F1D1DE88400F361BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C6DE681D1DE88400F361BF /* ChordMindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61C6DE5A1D1DE88400F361BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C6DE481D1DE88400F361BF /* ChordMind */;
+			targetProxy = 61C6DE591D1DE88400F361BF /* PBXContainerItemProxy */;
+		};
+		61C6DE651D1DE88400F361BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C6DE481D1DE88400F361BF /* ChordMind */;
+			targetProxy = 61C6DE641D1DE88400F361BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61C6DE501D1DE88400F361BF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C6DE511D1DE88400F361BF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61C6DE6A1D1DE88400F361BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61C6DE6B1D1DE88400F361BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		61C6DE6D1D1DE88400F361BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChordMind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidb.ChordMind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61C6DE6E1D1DE88400F361BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChordMind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidb.ChordMind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61C6DE701D1DE88400F361BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChordMindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidb.ChordMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChordMind.app/Contents/MacOS/ChordMind";
+			};
+			name = Debug;
+		};
+		61C6DE711D1DE88400F361BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChordMindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidb.ChordMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChordMind.app/Contents/MacOS/ChordMind";
+			};
+			name = Release;
+		};
+		61C6DE731D1DE88400F361BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChordMindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidb.ChordMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChordMind;
+			};
+			name = Debug;
+		};
+		61C6DE741D1DE88400F361BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ChordMindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.davidb.ChordMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ChordMind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61C6DE441D1DE88400F361BF /* Build configuration list for PBXProject "ChordMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C6DE6A1D1DE88400F361BF /* Debug */,
+				61C6DE6B1D1DE88400F361BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61C6DE6C1D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C6DE6D1D1DE88400F361BF /* Debug */,
+				61C6DE6E1D1DE88400F361BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61C6DE6F1D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C6DE701D1DE88400F361BF /* Debug */,
+				61C6DE711D1DE88400F361BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61C6DE721D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C6DE731D1DE88400F361BF /* Debug */,
+				61C6DE741D1DE88400F361BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61C6DE411D1DE88400F361BF /* Project object */;
+}
