@@ -82,6 +82,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func midiNotify(message: UnsafePointer<MIDIPacketList>, con: UnsafeMutablePointer<Void>) -> Void {
         let pl = message.memory
         print("Midi notify: \(pl.numPackets), len=\(pl.packet.length)")
+        
+        // Grumble, you can't iterate tuples in Swift. I'm not sure why they did this.
+        let mdata = Mirror(reflecting: pl.packet.data)
+        for (index, item) in mdata.children.enumerate() {
+            if index == Int(pl.packet.length) {
+                break
+            }
+            let hex = String(format: "%02x", item.value as! UInt8)
+            print("  byte(\(index)): \(hex)")
+        }
         // TODO: Unsure what to do if more than one packet.
         counter += Int(pl.packet.length)
         update()
