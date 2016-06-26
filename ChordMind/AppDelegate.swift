@@ -18,50 +18,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     var counter = 0
     
-    var mclient = MIDIClientRef()
-    var mport = MIDIPortRef()
+    var midi = Midi()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         logArea.stringValue = "This is the first line\nAnd this is the second\n"
-        
-        // Connect to the MIDI system.
-        if MIDIClientCreate("ChordMind", nil, nil, &mclient) != 0 {
-            // Warn about difficulties with the midi system, and at least present a dialog.
-            exit(1)
-        }
-        // if MIDIInputPortCreate(mclient, "input", midiRead, nil, &mport) != 0 {
-        if MIDIInputPortCreateWithBlock(mclient, "input", &mport, midiNotify) != 0 {
-            print("Error creating port")
-            exit(1)
-        }
-        
-        // Determine how many devices we have.
-        let num = MIDIGetNumberOfDevices()
-        print("There are \(num) MIDI devices")
-        for devNo in 0 ..< num {
-            let dev = MIDIGetDevice(devNo)
-            let nEntities = MIDIDeviceGetNumberOfEntities(dev)
-            print("  dev \(devNo) has \(nEntities) children")
-            let (s,p) = getProperties(dev)
-            if let properties = p where s == noErr {
-                print(properties)
-            }
-            
-            for entNo in 0 ..< nEntities {
-                let entity = MIDIDeviceGetEntity(dev, entNo)
-                let nSources = MIDIEntityGetNumberOfSources(entity)
-                for srcNo in 0 ..< nSources {
-                    let src = MIDIEntityGetSource(entity, srcNo)
-                    print("  src = \(src)")
-                    
-                    // Connect the source to our port.
-                    if MIDIPortConnectSource(mport, src, nil) != 0 {
-                        print("  Error connecting source")
-                    }
-                }
-            }
-        }
         
         update()
     }
@@ -77,39 +38,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func pushAppend(sender: AnyObject) {
         logArea.stringValue += "Appending some text\n"
         print("Show me some text")
-    }
-    
-    func midiNotify(message: UnsafePointer<MIDIPacketList>, con: UnsafeMutablePointer<Void>) -> Void {
-        let pl = message.memory
-        print("Midi notify: \(pl.numPackets), len=\(pl.packet.length)")
-        
-        // Grumble, you can't iterate tuples in Swift. I'm not sure why they did this.
-        let mdata = Mirror(reflecting: pl.packet.data)
-        for (index, item) in mdata.children.enumerate() {
-            if index == Int(pl.packet.length) {
-                break
-            }
-            let hex = String(format: "%02x", item.value as! UInt8)
-            print("  byte(\(index)): \(hex)")
-        }
-        // TODO: Unsure what to do if more than one packet.
-        counter += Int(pl.packet.length)
-        update()
-    }
-}
-
-func getProperties(obj: MIDIObjectRef) -> (OSStatus, Dictionary<String, AnyObject>?) {
-    var properties: Unmanaged<CFPropertyList>?
-    let status = MIDIObjectGetProperties(obj, &properties, true)
-    defer { properties?.release() }
-    if status != noErr {
-        print("error getting properties \(status)")
-        return (status, nil)
-    }
-    
-    if let dict = properties?.takeUnretainedValue() as? Dictionary<String, AnyObject> {
-        return (status, dict)
-    } else {
-        return (status, nil)
     }
 }

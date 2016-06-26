@@ -12,6 +12,7 @@
 		61C6DE521D1DE88400F361BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C6DE501D1DE88400F361BF /* MainMenu.xib */; };
 		61C6DE5D1D1DE88400F361BF /* ChordMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6DE5C1D1DE88400F361BF /* ChordMindTests.swift */; };
 		61C6DE681D1DE88400F361BF /* ChordMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6DE671D1DE88400F361BF /* ChordMindUITests.swift */; };
+		61CA6EC81D1F7C1F00F361BF /* Midi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CA6EC71D1F7C1F00F361BF /* Midi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		61C6DE631D1DE88400F361BF /* ChordMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C6DE671D1DE88400F361BF /* ChordMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordMindUITests.swift; sourceTree = "<group>"; };
 		61C6DE691D1DE88400F361BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61CA6EC71D1F7C1F00F361BF /* Midi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Midi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				61C6DE4E1D1DE88400F361BF /* Assets.xcassets */,
 				61C6DE501D1DE88400F361BF /* MainMenu.xib */,
 				61C6DE531D1DE88400F361BF /* Info.plist */,
+				61CA6EC71D1F7C1F00F361BF /* Midi.swift */,
 			);
 			path = ChordMind;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61CA6EC81D1F7C1F00F361BF /* Midi.swift in Sources */,
 				61C6DE4D1D1DE88400F361BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +475,7 @@
 				61C6DE6E1D1DE88400F361BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61C6DE6F1D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMindTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +484,7 @@
 				61C6DE711D1DE88400F361BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61C6DE721D1DE88400F361BF /* Build configuration list for PBXNativeTarget "ChordMindUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +493,7 @@
 				61C6DE741D1DE88400F361BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
